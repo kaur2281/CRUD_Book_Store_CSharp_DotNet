@@ -47,5 +47,15 @@ namespace PROG32356Midterm_Avneet
             bookArr.Add(b1);
             MessageBox.Show("Book Added!");
         }
+
+        private void dataGrid_Loaded(object sender, RoutedEventArgs e)
+        {
+            dataGrid.ItemsSource = bookArr;
+        }
+
+        private void dataGrid_Unloaded(object sender, RoutedEventArgs e)
+        {
+            dataGrid.ItemsSource = null;
+        }
     }
 }

@@ -44,14 +44,24 @@
                     </Canvas>
 
                 </TabItem>
-                <TabItem Header="Show Books"></TabItem>
+                <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////         -->
+                <TabItem Header="Show Books">
+                    <Canvas Background="LightYellow">
+                        <Label Content="Show Books" Canvas.Left="317" Canvas.Top="19" Height="43" Width="160" FontSize="20" FontFamily="Arial Black"/>
+                        <DataGrid x:Name="dataGrid" DataContext="{Binding}" Height="223" Width="642" Canvas.Top="67" Canvas.Left="76" Loaded="dataGrid_Loaded" Unloaded="dataGrid_Unloaded"/>
+
+                    </Canvas>
+                </TabItem>
+                <!--///////////////////////////////////////////////////////////////////////////// -->
                 <TabItem Header="Search Book"></TabItem>
+                <!--///////////////////////////////////////////////////////////////////////////// -->
                 <TabItem Header="Edit-Book"></TabItem>
             </TabControl>
         </Canvas>
         <StackPanel Grid.Row="1" Orientation="Horizontal" Background="DarkCyan" >
-            <Button x:Name="btnGotoLandingPage" Style="{StaticResource buttonStyle}" Content="LandingPage" Click="btnGotoLandingPage_Click"/>
-
+            <Separator Width="290px" Background="DarkCyan"></Separator>
+            <Button x:Name="btnGotoLandingPage" Style="{StaticResource buttonStyle}"  Content="LandingPage" Click="btnGotoLandingPage_Click"/>
+            <Separator Width="20px"  Background="DarkCyan"></Separator>
             <Button x:Name="btnExit" Style="{StaticResource buttonStyle}" Content="Exit" Click="btnExit_Click"/>
         </StackPanel>
     </Grid>
