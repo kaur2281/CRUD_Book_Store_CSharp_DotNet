@@ -58,6 +58,21 @@ namespace PROG32356Midterm_Avneet
             dataGrid.ItemsSource = null;
         }
 
-       
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            CheckBox[] chkBoxes = {cbFiction,cbSports,cbScifi };
+            List<Books> tmp = new List<Books>();
+            foreach (var box in chkBoxes)
+            {
+                if (box.IsChecked == true)
+                {
+                    foreach (Books b in bookArr)
+                    {
+                        if (b.Genre == box.Content.ToString()) tmp.Add(b);
+                    }
+                }
+            }
+            lstBox.DataContext = tmp;
+        }
     }
 }

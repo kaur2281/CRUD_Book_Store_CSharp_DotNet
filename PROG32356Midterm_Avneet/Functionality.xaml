@@ -56,12 +56,13 @@
                 <TabItem Header="Search Book">
                     <Canvas>
                         <Label Content="Search By Genre" Canvas.Left="79" Canvas.Top="61" Height="36" Width="202" FontFamily="Arial Black" FontSize="20"/>
-                        <CheckBox x:Name="cbFIction" Content="Fiction" Canvas.Left="312" Canvas.Top="39" Checked="CheckBox_Checked"/>
-                        <CheckBox x:Name="cbSports" Content="Sports" Canvas.Left="312" Canvas.Top="71"/>
-                        <CheckBox x:Name="cbScifi" Content="Sci-fi" Canvas.Left="312" Canvas.Top="103"/>
-                        <ListBox Height="167" Width="513" Canvas.Left="107" Canvas.Top="145"/>
-                        <Button x:Name="btnSearch" Content="Button" Canvas.Left="466" Canvas.Top="61" Height="33" Width="73"/>
 
+                        <CheckBox x:Name="cbFiction" Content="Fiction" Canvas.Left="275" Canvas.Top="75" Foreground="#24305E"/>
+                        <CheckBox x:Name="cbSports" Content="Sports" Canvas.Left="365" Canvas.Top="75" Foreground="#24305E" />
+                        <CheckBox x:Name="cbScifi" Content="Sci-fi" Canvas.Left="469" Canvas.Top="75" Foreground="#24305E"/>
+                        <ListBox x:Name="lstBox" ItemsSource="{Binding}" Height="171" Canvas.Left="105" Canvas.Top="138" Width="576"/>
+
+                        <Button x:Name="btnSearch" Content="Search" Canvas.Left="584" Canvas.Top="65" Height="33" Width="73" Click="btnSearch_Click"/>
                     </Canvas>
                 </TabItem>
                 <!--///////////////////////////////////////////////////////////////////////////// -->
