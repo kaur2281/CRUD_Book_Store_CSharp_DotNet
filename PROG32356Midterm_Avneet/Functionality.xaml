@@ -36,7 +36,7 @@
                         <TextBox x:Name="txtTitle" Canvas.Left="325" Canvas.Top="72" TextWrapping="Wrap" Width="120"/>
                         <TextBox x:Name="txtIsbn" Canvas.Left="325" Canvas.Top="194"  TextWrapping="Wrap" Width="120"/>
                         <TextBox x:Name="txtPrice" Canvas.Left="325" Canvas.Top="244"  TextWrapping="Wrap" Width="120"/>
-                        <Button x:Name="btnAddBook" Content="Add Book" Style="{StaticResource buttonStyle}" Canvas.Left="600" Canvas.Top="257" Height="34" Width="99"/>
+                        <Button x:Name="btnAddBook" Content="Add Book" Style="{StaticResource buttonStyle}" Canvas.Left="600" Canvas.Top="257" Height="34" Width="99" Click="btnAddBook_Click"/>
                         <RadioButton x:Name="rbtnScifi" Content="Sci-fi" Canvas.Left="325" Canvas.Top="123" Width="60" IsChecked="True" FontFamily="Arial Rounded MT Bold"/>
                         <RadioButton x:Name="rbtnFiction" Content="Fiction" Canvas.Left="325" Canvas.Top="142" Width="60" FontFamily="Arial Rounded MT Bold"/>
                         <RadioButton x:Name="rbtnSports" Content="Sports" Canvas.Left="325" Canvas.Top="161" Width="60" FontFamily="Arial Rounded MT Bold"/>
