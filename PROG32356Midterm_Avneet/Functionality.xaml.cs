@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -10,25 +8,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace PROG32356Midterm_Avneet
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Functionality.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Functionality : Window
     {
-        public MainWindow()
+        public Functionality()
         {
             InitializeComponent();
         }
 
         private void btnGotoLandingPage_Click(object sender, RoutedEventArgs e)
         {
-            Functionality f1 = new Functionality();
-            f1.Show();
+            MainWindow m1 = new MainWindow();
+            m1.Show();
             this.Close();
         }
 

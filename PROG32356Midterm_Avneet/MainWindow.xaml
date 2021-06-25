@@ -5,12 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PROG32356Midterm_Avneet"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="43*"/>
-            <ColumnDefinition Width="117*"/>
-        </Grid.ColumnDefinitions>
+        Title="ABC BookstoreAvneet" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="buttonStyle" TargetType="Button">
+            <Setter Property="Foreground" Value="LightCoral" />
+            <Setter Property="Background" Value="DarkGray" />
+            <Setter Property="FontFamily" Value="Arial Black" />
+            
+        </Style>
+    </Window.Resources>
+    <Canvas Background="CadetBlue">
+        <Label x:Name="lblAbcBookstore" Content="ABC Bookstore Info. System" Canvas.Left="128" Canvas.Top="24" Height="55" Width="597" FontFamily="Arial Black" FontSize="36"/>
+        <Label Content="Developed by" Canvas.Left="295" Canvas.Top="163" FontFamily="Arial Black" FontSize="24" />
+        <Label Content="Avneet Kaur" Canvas.Left="308" Canvas.Top="206" Width="185" FontFamily="Arial Black" FontSize="24"/>
+        <Label Content="991427660&#xD;&#xA;" Canvas.Left="323" Canvas.Top="249" Height="57" Width="207" FontFamily="Arial Black" FontSize="20"/>
+        <Button x:Name="btnGotoLandingPage" Style="{StaticResource buttonStyle}" Content="Landing Page" Canvas.Left="111" Canvas.Top="356" RenderTransformOrigin="-0.319,-0.452" Height="29" Width="82" Click="btnGotoLandingPage_Click"/>
+        <Button x:Name="btnExit" Style="{StaticResource buttonStyle}" Content="Exit" Canvas.Left="603" Canvas.Top="356" Height="29" Width="61" Click="btnExit_Click"/>
 
-    </Grid>
+
+    </Canvas>
 </Window>
