@@ -57,5 +57,7 @@ namespace PROG32356Midterm_Avneet
         {
             dataGrid.ItemsSource = null;
         }
+
+       
     }
 }
