@@ -22,10 +22,17 @@
             <RowDefinition Height="350px" />
             <RowDefinition Height="89.947" />
         </Grid.RowDefinitions>
-        <Canvas Grid.Row="0">
-
+        <Canvas Grid.Row="0" Height="350px" Width="800px">
+            <TabControl  Height="350px" Width="800px" Background="LightBlue">
+                <TabItem Header="Insert-Book">
+                    <!-- Insert Book code below-->
+                </TabItem>
+                <TabItem Header="Show Books"></TabItem>
+                <TabItem Header="Search Book"></TabItem>
+                <TabItem Header="Edit-Book"></TabItem>
+            </TabControl>
         </Canvas>
-        <StackPanel Grid.Row="1" Orientation="Horizontal" Background="BlanchedAlmond" >
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Background="DarkCyan" >
             <Button x:Name="btnGotoLandingPage" Style="{StaticResource buttonStyle}" Content="LandingPage" Click="btnGotoLandingPage_Click"/>
     
             <Button x:Name="btnExit" Style="{StaticResource buttonStyle}" Content="Exit" Click="btnExit_Click"/>
