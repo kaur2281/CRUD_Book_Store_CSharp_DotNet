@@ -66,7 +66,16 @@
                     </Canvas>
                 </TabItem>
                 <!--///////////////////////////////////////////////////////////////////////////// -->
-                <TabItem Header="Edit-Book"></TabItem>
+                <TabItem Header="Edit-Book">
+                    <Canvas>
+                        <Label Content="Enter ISBN" Canvas.Left="136" Canvas.Top="43" FontFamily="Arial Black" FontSize="20"/>
+                        <TextBox x:Name="txtEditBookIsbn" Canvas.Left="322" Canvas.Top="46"  TextWrapping="Wrap" Width="150" Height="26"/>
+                        <Button Content="Edit" Canvas.Left="609" Canvas.Top="46" Height="30" Width="55" Click="Button_Click"/>
+                        <Label Content="Enter Price" Canvas.Left="136" Canvas.Top="128" FontFamily="Arial Black" FontSize="20"/>
+                        <TextBox x:Name="txtNPrice" Canvas.Left="322" Canvas.Top="131" TextWrapping="Wrap" Width="150" Height="26"/>
+
+                    </Canvas>
+                </TabItem>
             </TabControl>
         </Canvas>
         <StackPanel Grid.Row="1" Orientation="Horizontal" Background="DarkCyan" >

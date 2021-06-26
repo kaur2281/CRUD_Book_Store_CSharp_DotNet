@@ -74,5 +74,24 @@ namespace PROG32356Midterm_Avneet
             }
             lstBox.DataContext = tmp;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int tmp = Convert.ToInt32(txtEditBookIsbn.Text);
+            Boolean found = false;
+            foreach (Books b in bookArr)
+            {
+                if (b.Isbn == tmp)
+                {
+                    found = true;
+                    b.Price = Convert.ToDouble(txtNPrice.Text);
+                    MessageBox.Show("Book Updated");
+                }
+            }
+            if (found == false)
+            {
+                MessageBox.Show("Book not Found!");
+            }
+        }
     }
 }
